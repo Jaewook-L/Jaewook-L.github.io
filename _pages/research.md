@@ -32,7 +32,6 @@ The goal of this research is to enable accurate and immediate battery health ass
 <ul>
   <li>Diagnosing Rapidly Degrading Lithium Ion Battery Cells Using Direct Current Internal Resistance — <em>Chemical Engineering Journal</em> (2025)</li>
   <li>Electric Vehicle Pattern-based Battery Cycling Dataset and Its Application in Predicting Rapid Degradation — <em>Journal of Energy Storage</em> (2025)</li>
-  <li>Rapid and Non-destructive Diagnosis of Lithium-ion Batteries via Quantification of Spatial Distribution of Surface Degradation — <em>Joule</em> (2025, Accepted)</li>
   <li>Non-invasive Degradation Diagnosis Framework for Lithium-Ion Batteries via Capacity and Power Fade Prediction — <em>In Revision</em></li>
   <li>Deciphering Dominant Degradation Modes of Lithium-ion Batteries under Real-World Dynamic Profiles via Explainable Machine Learning — <em>In Preparation</em></li>
 </ul>
@@ -40,15 +39,16 @@ The goal of this research is to enable accurate and immediate battery health ass
 
 ---
 
-**Bayesian Optimization for Battery Design**  
-I utilize Bayesian optimization and inverse engineering to efficiently navigate the vast design space of electrolyte compositions and battery formation protocols. By integrating Gaussian process regression with experimental workflows, this research identifies optimal multi-solvent formulations and elucidates high-entropy effects that enhance rate capability and cycle life. This data-driven strategy minimizes trial-and-error, enabling the rapid discovery of high-performance battery components.
+**Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design**  
+I leverage Bayesian optimization and inverse engineering to efficiently navigate the vast design space of electrolyte compositions and battery formation protocols. By integrating Gaussian process regression with automated experimental workflows — forming a self-driving laboratory platform — this research identifies optimal multi-solvent formulations and elucidates high-entropy effects that enhance rate capability and cycle life. This closed-loop, data-driven strategy minimizes trial-and-error, enabling the rapid and systematic discovery of high-performance battery components.
 
 <div class="related-publications">
 <strong>Related Publications</strong>
 <ul>
   <li>High-entropy Electrolytes towards Advanced Aqueous Zinc-ion Batteries — <em>Journal of Materials Chemistry A</em> (2025)</li>
   <li>Bayesian Optimization-guided Tri-solvent Electrolyte Design for Aqueous Zinc-ion Batteries — <em>In Preparation</em></li>
-  <li>Accelerated Discovery of Optimal Electrolyte Formulations for Silicon Anodes: Unveiling High-Entropy Effects via Inverse Engineering — <em>In Preparation</em></li>
+  <li>Accelerated Discovery of Optimal Electrolyte Formulations for Fast-Chargeable Lithium-Ion Batteries — <em>In Preparation</em></li>
+  <li>Automated Discovery of Scalable Electrolyte Formulations for Lithium Metal Batteries via Explainable AI and Robotic Synthesis — <em>In Preparation</li>
 </ul>
 </div>
 
