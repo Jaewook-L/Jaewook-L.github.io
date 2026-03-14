@@ -15,8 +15,9 @@ My research focuses on developing AI-driven frameworks for battery diagnostics a
 
 - Hybrid Physics-informed and Data-driven Modeling of Li-ion Battery SOH Degradation
 - Real-time Lifetime Diagnosis and Prognosis Using Field-accessible Electrochemical Indices
+- Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design
 - Transfer Learning-based Degradation Pattern Prediction for Next-generation Batteries
-- Bayesian Optimization of Electrolyte Compositions and Battery Formation Protocols
+
 
 ## Education
 
