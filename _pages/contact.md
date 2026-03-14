@@ -9,7 +9,7 @@ author_profile: true
 
 **Jaewook Lee**  
 Postdoctoral Researcher  
-Institute for Battery Research Innovation (IRC)
+Institute for Battery Research Innovation (IRC)  
 Seoul National University, Seoul, South Korea
 
 **Email:** [1120jw@snu.ac.kr](mailto:1120jw@snu.ac.kr)  
