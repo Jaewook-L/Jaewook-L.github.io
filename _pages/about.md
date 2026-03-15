@@ -18,6 +18,11 @@ My research focuses on developing AI-driven frameworks for battery diagnostics a
 - Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design
 - Transfer Learning-based Degradation Pattern Prediction for Next-generation Batteries
 
+## Research Experience
+
+Postdoc in Chemical and Biomolecular Engineering and Institute of Chemical Processes
+Seoul National University, Seoul (Mar 2025 – present)  
+Advisor: Prof. Jang Wook Choi
 
 ## Education
 
