@@ -17,7 +17,7 @@ This research aims to overcome the limitations of conventional black-box models 
 <ul>
   <li>Simultaneous Extraction of Intra- and Inter-Cycle Features for Predicting Lithium-Ion Battery's Knees Using Convolutional and Recurrent Neural Networks — <em>Applied Energy</em> (2024)</li>
   <li>Extracting Key Temporal and Cyclic Features from VIT Data to Predict Lithium-Ion Battery Knee Points Using Attention Mechanisms — <em>Computers & Chemical Engineering</em> (2025)</li>
-  <li>Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model with No Cycling Cost — <em>Under Review</em></li>
+  <li>Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model for Data-Efficient Deployment — <em>In Revision</em></li>
   <li>Learning First-principles Knowledge from Data — <em>Artificial Intelligence in Manufacturing</em> (2024)</li>
 </ul>
 </div>
@@ -48,7 +48,7 @@ I leverage Bayesian optimization and inverse engineering to efficiently navigate
   <li>High-entropy Electrolytes towards Advanced Aqueous Zinc-ion Batteries — <em>Journal of Materials Chemistry A</em> (2025)</li>
   <li>Machine learning-driven design of multi-component electrolytes for fast-charging lithium-ion batteries — <em>In Preparation</em></li>
   <li>Robotic-XAI Collaboration for the Discovery of Scalable Electrolytes in Lithium Metal Batteries — <em>In Preparation</em></li>
-  <li>Extended active learning-guided design of multi-component electrolytes with opposing co-solvent properties — <em>Submitted (<a href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15002453/v1" target="_blank">ChemRxiv</a>)</em></li>
+  <li>Extended Active Learning-Guided Design of Multi-Component Electrolytes with Opposing Co-Solvent Properties for Aqueous Zinc-Ion Batteries — <em>Submitted (<a href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15002453/v1" target="_blank">ChemRxiv</a>)</em></li>
 </ul>
 </div>
 
