@@ -1,5 +1,5 @@
 ---
-title: "Accelerated Discovery of Optimal Electrolyte Formulations for Fast-Chargeable Lithium-Ion Batteries"
+title: "Machine learning-driven design of multi-component electrolytes for fast-charging lithium-ion batteries"
 collection: publications
 category: manuscripts
 permalink: /publication/HEE-LGES
