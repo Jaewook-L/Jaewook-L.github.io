@@ -1,5 +1,5 @@
 ---
-title: "Extended active learning-guided design of multi-component electrolytes with opposing co-solvent properties"
+title: "Extended Active Learning-Guided Design of Multi-Component Electrolytes with Opposing Co-Solvent Properties for Aqueous Zinc-Ion Batteries"
 collection: publications
 category: manuscripts
 permalink: /publication/Active-Learning-AZIB
