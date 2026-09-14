@@ -17,7 +17,7 @@ This research aims to overcome the limitations of conventional black-box models 
 <ul>
   <li>Simultaneous Extraction of Intra- and Inter-Cycle Features for Predicting Lithium-Ion Battery's Knees Using Convolutional and Recurrent Neural Networks — <em>Applied Energy</em> (2024)</li>
   <li>Extracting Key Temporal and Cyclic Features from VIT Data to Predict Lithium-Ion Battery Knee Points Using Attention Mechanisms — <em>Computers & Chemical Engineering</em> (2025)</li>
-  <li>Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model for Data-Efficient Deployment — <em>In Revision</em></li>
+  <li>Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model for Data-Efficient Deployment — <em>Journal of Energy Storage (2026)</em></li>
   <li>Learning First-principles Knowledge from Data — <em>Artificial Intelligence in Manufacturing</em> (2024)</li>
 </ul>
 </div>
