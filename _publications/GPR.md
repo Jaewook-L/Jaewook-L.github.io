@@ -7,5 +7,6 @@ date: 2026-12-30
 venue: "Journal of Energy Storage"
 volume: 182
 pages: 124739
+paperurl: "https://doi.org/10.1016/j.est.2026.124739"
 citation: "Jaewook Lee†, Seyeong Park†, Sangjun Jeon, and Seongmin Heo, <i>Journal of Energy Storage</i>, 182 (2026):124739"
 ---
