@@ -1,0 +1,80 @@
+# Add a site-relative image path to enable a figure. Empty image values hide it.
+# Publication keys match the filename (without .md) in _publications/.
+# Example: image: /images/publications/attention.png
+# alt is a short description for accessibility; caption is optional plain text.
+publications:
+  Active-Learning-AZIB:
+    image: /images/publications/extended.jpg
+    alt: "Closed-loop Bayesian optimization for screening and refining multi-component aqueous zinc-ion battery electrolytes."
+    caption: ""
+  HEE-LGES:
+    image: ""
+    alt: ""
+    caption: ""
+  HMG-BMS:
+    image: ""
+    alt: ""
+    caption: ""
+  SDL-LMB:
+    image: ""
+    alt: ""
+    caption: ""
+  TL-LIB-LMB:
+    image: ""
+    alt: ""
+    caption: ""
+  GPR:
+    image: /images/publications/physics-informed.png
+    alt: "Physics-informed Gaussian process regression combining C-rate, temperature, and depth-of-discharge kernels to predict battery end of life."
+    caption: ""
+  Power-Fade:
+    image: /images/publications/interpretable.png
+    alt: "Elastic net models jointly predict capacity and power fade and classify health indices by their contributions to battery degradation."
+    caption: ""
+  Heterogeneity-Joule:
+    image: ""
+    alt: ""
+    caption: ""
+  HEE-Perspective:
+    image: ""
+    alt: ""
+    caption: ""
+  DCIR-LGES:
+    image: /images/publications/diagnosing.png
+    alt: "Direct current internal resistance features from pulse tests identify rapidly degrading cells and predict battery state of health."
+    caption: ""
+  2D-CNN-LGES:
+    image: /images/publications/electric-vehicle.png
+    alt: "Two-dimensional convolutional networks classify battery degradation and predict state of health using cycling data and SMOTE augmentation."
+    caption: ""
+  Attention:
+    image: /images/publications/extracting.png
+    alt: "Temporal attention and multihead self-attention extract intra-cycle and inter-cycle features to predict battery knee onset."
+    caption: ""
+  2D-CNN:
+    image: /images/publications/simultaneous.png
+    alt: "Recurrent and two-dimensional convolutional networks combine intra-cycle and inter-cycle features to predict battery knee points and knee onset."
+    caption: ""
+  Book1:
+    image: ""
+    alt: ""
+    caption: ""
+
+# Research figures are placed after each topic's description.
+research:
+  hybrid-modeling:
+    image: ""
+    alt: ""
+    caption: ""
+  lifetime-diagnosis:
+    image: ""
+    alt: ""
+    caption: ""
+  self-driving-lab:
+    image: ""
+    alt: ""
+    caption: ""
+  transfer-learning:
+    image: ""
+    alt: ""
+    caption: ""

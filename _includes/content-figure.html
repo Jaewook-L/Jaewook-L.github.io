@@ -1,0 +1,16 @@
+{%- assign figure_image = include.figure.image | default: "" | strip -%}
+{%- if figure_image != "" -%}
+  {%- if figure_image contains "://" -%}
+    {%- assign figure_url = figure_image -%}
+  {%- else -%}
+    {%- assign figure_url = figure_image | relative_url -%}
+  {%- endif -%}
+  {%- assign figure_alt = include.figure.alt | default: include.title | strip_html -%}
+  {%- assign figure_caption = include.figure.caption | default: "" | strip -%}
+<figure class="content-figure content-figure--{{ include.variant | default: 'research' | escape }}">
+  <a class="content-figure__link" href="{{ figure_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ include.title | strip_html | escape }}: view full-size figure (opens in a new tab)">
+    <img src="{{ figure_url | escape }}" alt="{{ figure_alt | escape }}" loading="lazy" decoding="async">
+  </a>
+  {% if figure_caption != "" %}<figcaption>{{ figure_caption | escape }}</figcaption>{% endif %}
+</figure>
+{%- endif -%}

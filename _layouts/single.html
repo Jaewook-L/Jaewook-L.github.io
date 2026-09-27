@@ -45,6 +45,10 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'publications' %}
+          {% assign page_figure = site.data.figures.publications[page.slug] %}
+          {% include content-figure.html figure=page_figure title=page.title variant="detail" %}
+        {% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}

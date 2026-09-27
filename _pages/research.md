@@ -12,6 +12,9 @@ My research focuses on developing AI-driven frameworks for battery diagnostics a
 **Hybrid Physics-informed and Data-driven Modeling**  
 This research aims to overcome the limitations of conventional black-box models by integrating electrochemical first principles with deep learning architectures. By embedding physical constraints into neural networks, I develop frameworks that ensure thermodynamic consistency and improve generalization even with limited experimental data. My work particularly emphasizes capturing both intra-cycle voltage–current dynamics and inter-cycle long-term degradation trends to precisely monitor capacity fade and resistance growth.
 
+{% assign research_figure = site.data.figures.research["hybrid-modeling"] %}
+{% include content-figure.html figure=research_figure title="Hybrid Physics-informed and Data-driven Modeling" variant="research" %}
+
 <div class="related-publications">
 <strong>Related Publications</strong>
 <ul>
@@ -26,6 +29,9 @@ This research aims to overcome the limitations of conventional black-box models 
 
 **Real-time Lifetime Diagnosis and Prognosis**  
 The goal of this research is to enable accurate and immediate battery health assessment in field environments without relying on costly laboratory equipment. I develop lightweight algorithms that utilize field-accessible electrochemical indices and operational data to diagnose degradation modes in real time. This includes quantifying surface degradation and identifying dominant failure mechanisms under dynamic electric vehicle (EV) profiles, ensuring the safety and reliability of large-scale energy storage systems.
+
+{% assign research_figure = site.data.figures.research["lifetime-diagnosis"] %}
+{% include content-figure.html figure=research_figure title="Real-time Lifetime Diagnosis and Prognosis" variant="research" %}
 
 <div class="related-publications">
 <strong>Related Publications</strong>
@@ -42,6 +48,9 @@ The goal of this research is to enable accurate and immediate battery health ass
 **Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design**  
 I leverage Bayesian optimization and inverse engineering to efficiently navigate the vast design space of electrolyte compositions and battery formation protocols. By integrating Gaussian process regression with automated experimental workflows — forming a self-driving laboratory platform — this research identifies optimal multi-solvent formulations and elucidates high-entropy effects that enhance rate capability and cycle life. This closed-loop, data-driven strategy minimizes trial-and-error, enabling the rapid and systematic discovery of high-performance battery components.
 
+{% assign research_figure = site.data.figures.research["self-driving-lab"] %}
+{% include content-figure.html figure=research_figure title="Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design" variant="research" %}
+
 <div class="related-publications">
 <strong>Related Publications</strong>
 <ul>
@@ -56,6 +65,9 @@ I leverage Bayesian optimization and inverse engineering to efficiently navigate
 
 **Transfer Learning for Next-generation Batteries**  
 This research leverages knowledge gained from well-characterized lithium-ion systems to accelerate the development of next-generation batteries, including silicon-anode and aqueous zinc-ion systems. By employing transfer learning frameworks, I aim to predict degradation patterns across diverse chemistries with minimal new data, significantly reducing the time and cost required for material validation. This approach facilitates a universal diagnostic platform adaptable to various electrode materials and electrolyte environments.
+
+{% assign research_figure = site.data.figures.research["transfer-learning"] %}
+{% include content-figure.html figure=research_figure title="Transfer Learning for Next-generation Batteries" variant="research" %}
 
 <div class="related-publications">
 <strong>Related Publications</strong>

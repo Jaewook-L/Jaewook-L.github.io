@@ -1,0 +1,73 @@
+/* Optional scientific figures: preserve every part of the original image. */
+.content-figure {
+  display: block;
+  max-width: 100%;
+  margin: 1.25em 0 1.75em;
+
+  .content-figure__link {
+    display: block;
+    padding: 0.5em;
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+    background: #fff;
+
+    &:focus-visible {
+      outline: 3px solid var(--global-link-color);
+      outline-offset: 3px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 440px;
+    margin: 0;
+    object-fit: contain;
+    border-radius: 0;
+  }
+
+  figcaption {
+    margin: 0.6em 0 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+}
+
+.publication--with-figure {
+  display: grid;
+  grid-template-columns: minmax(140px, 28%) minmax(0, 1fr);
+  align-items: start;
+  gap: 1.15em;
+  margin: 1.4em 0 1.8em;
+
+  .content-figure {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .content-figure img {
+    aspect-ratio: 4 / 3;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .publication__body {
+    min-width: 0;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .publication--with-figure {
+    display: block;
+
+    .content-figure {
+      max-width: 360px;
+      margin: 0 0 1em;
+    }
+  }
+}

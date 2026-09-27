@@ -15,6 +15,44 @@
 
 See more info at https://academicpages.github.io/
 
+## Publication and research figures
+
+Optional figures are configured in `_data/figures.yml`. An empty `image` value
+keeps the existing text-only layout, with no placeholder or empty space.
+
+1. Put publication images in `images/publications/` and research images in
+   `images/research/`. PNG, JPG, WebP and SVG files are supported by the image markup.
+2. Set the matching entry's `image` to its site-relative path. Publication keys
+   match filenames in `_publications/`, without `.md` (case-sensitive).
+3. Add a short `alt` description and an optional plain-text `caption`.
+
+For example, under `publications` in `_data/figures.yml`:
+
+```yaml
+  Attention:
+    image: /images/publications/attention.png
+    alt: "Overview of the attention-based battery knee prediction model"
+    caption: "Model architecture and prediction workflow."
+```
+
+Publication figures appear to the left of each paper's title and citation on
+larger screens, and above them on mobile. The same figure also appears on the
+paper's detail page. Figures preserve their contents without cropping; click
+a figure to open the original image in a new tab.
+
+Research keys map to the following topics. These figures appear after the
+description and before Related Publications:
+
+| Key | Research topic |
+| --- | --- |
+| `hybrid-modeling` | Hybrid Physics-informed and Data-driven Modeling |
+| `lifetime-diagnosis` | Real-time Lifetime Diagnosis and Prognosis |
+| `self-driving-lab` | Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design |
+| `transfer-learning` | Transfer Learning for Next-generation Batteries |
+
+Use a path such as `/images/research/hybrid-modeling.png` in the matching
+`research` entry. All entries start empty, ready for the selected images.
+
 ## Running locally
 
 When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
