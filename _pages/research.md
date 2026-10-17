@@ -59,7 +59,7 @@ The design space of electrolyte compositions and formation protocols is too larg
 <ul>
   <li>High-entropy Electrolytes towards Advanced Aqueous Zinc-ion Batteries — <em>Journal of Materials Chemistry A</em> (2025)</li>
   <li>Extended Active Learning-Guided Design of Multi-Component Electrolytes with Opposing Co-Solvent Properties for Aqueous Zinc-Ion Batteries — <em>Journal of the American Chemical Society</em> (2026)</li>
-  <li>Machine learning-driven design of multi-component electrolytes for fast-charging lithium-ion batteries — <em>In Preparation</em></li>
+  <li>Machine Learning-Driven Design of Multi-Component Electrolytes for Fast-Charging Lithium-Ion Batteries — <em>In Preparation</em></li>
   <li>Robotic-XAI Collaboration for the Discovery of Scalable Electrolytes in Lithium Metal Batteries — <em>In Preparation</em></li>
 </ul>
 </div>
