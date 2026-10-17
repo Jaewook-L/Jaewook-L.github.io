@@ -8,7 +8,6 @@ author_profile: true
   You can also find my articles on <u><a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 
-<h2>Under Review / In Revision</h2>
 {% assign under_review = "" | split: "" %}
 {% for item in site.publications %}
   {% if item.venue == "Under Review" or item.venue == "In Revision" %}
@@ -16,9 +15,12 @@ author_profile: true
   {% endif %}
 {% endfor %}
 {% assign under_review = under_review | sort: "date" | reverse %}
+{% if under_review.size > 0 %}
+<h2>Under Review / In Revision</h2>
 {% for post in under_review %}
   {% include archive-single.html %}
 {% endfor %}
+{% endif %}
 
 <h2>In Preparation</h2>
 {% assign in_prep = "" | split: "" %}
@@ -32,17 +34,30 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-<h2>Published Journal Articles</h2>
+<h2>Published Journal Articles (First / Co-first Author)</h2>
 {% assign published = "" | split: "" %}
+{% assign coauthored = "" | split: "" %}
 {% for item in site.publications %}
   {% if item.category == "manuscripts" and item.venue != "Under Review" and item.venue != "In Revision" and item.venue != "In Preparation" %}
-    {% assign published = published | push: item %}
+    {% if item.authorship == "first" or item.authorship == "co-first" %}
+      {% assign published = published | push: item %}
+    {% else %}
+      {% assign coauthored = coauthored | push: item %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 {% assign published = published | sort: "date" | reverse %}
 {% for post in published %}
   {% include archive-single.html %}
 {% endfor %}
+
+{% assign coauthored = coauthored | sort: "date" | reverse %}
+{% if coauthored.size > 0 %}
+<h2>Co-authored Journal Articles</h2>
+{% for post in coauthored %}
+  {% include archive-single.html %}
+{% endfor %}
+{% endif %}
 
 <h2>Book Chapters</h2>
 {% assign books = site.publications | where: "category", "books" | sort: "date" | reverse %}

@@ -2,6 +2,7 @@
 title: "High-entropy Electrolytes towards Advanced Aqueous Zinc-ion Batteries"
 collection: publications
 category: manuscripts
+authorship: coauthor
 permalink: /publication/HEE-Perspective
 date: 2025-11-03
 venue: "Journal of Materials Chemistry A"

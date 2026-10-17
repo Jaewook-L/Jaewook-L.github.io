@@ -2,6 +2,7 @@
 title: "A Transfer Learning Framework for Enabling Accurate State-of-Health Prediction across Diverse Battery Chemistries"
 collection: publications
 category: manuscripts
+authorship: co-first
 permalink: /publication/TL-LIB-LMB
 date: 2026-01-10
 venue: "In Preparation"

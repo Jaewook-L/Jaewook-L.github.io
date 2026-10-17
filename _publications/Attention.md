@@ -2,6 +2,7 @@
 title: "Extracting Key Temporal and Cyclic Features from VIT Data to Predict Lithium-Ion Battery Knee Points Using Attention Mechanisms"
 collection: publications
 category: manuscripts
+authorship: first
 permalink: /publication/Attention
 date: 2025-02-01
 venue: "Computers & Chemical Engineering"

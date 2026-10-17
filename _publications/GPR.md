@@ -2,6 +2,7 @@
 title: "Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model for Data-Efficient Deployment"
 collection: publications
 category: manuscripts
+authorship: co-first
 permalink: /publication/GPR
 date: 2026-12-30
 venue: "Journal of Energy Storage"

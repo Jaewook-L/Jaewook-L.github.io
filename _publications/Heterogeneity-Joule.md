@@ -2,6 +2,7 @@
 title: "Rapid and Non-destructive Diagnosis of Lithium-ion Batteries via Quantification of Spatial Distribution of Surface Degradation"
 collection: publications
 category: manuscripts
+authorship: coauthor
 permalink: /publication/Heterogeneity-Joule
 date: 2026-03-11
 venue: "Joule"

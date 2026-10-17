@@ -15,6 +15,19 @@
 
 See more info at https://academicpages.github.io/
 
+## Publication status and authorship
+
+Set `authorship` in each manuscript's front matter to `first`, `co-first`, or
+`coauthor`, describing Jaewook Lee's role. First and co-first author journal
+articles appear in the main published section; other journal articles appear
+under Co-authored Journal Articles, immediately before Book Chapters. Each
+section is sorted by the existing `date`, newest first.
+
+For an accepted article, set `venue` to the journal name, add `status: accepted`,
+and update `citation` to say Accepted. The detail page will show Accepted for
+publication rather than Published in. Retain a preprint link until the journal
+URL is available; update any related citation in `_pages/research.md` as well.
+
 ## Publication and research figures
 
 Optional figures are configured in `_data/figures.yml`. An empty `image` value

@@ -2,6 +2,7 @@
 title: "Electric Vehicle Pattern-based Battery Cycling Dataset and Its Application in Predicting Rapid Degradation"
 collection: publications
 category: manuscripts
+authorship: first
 permalink: /publication/2D-CNN-LGES
 date: 2025-06-30
 venue: "Journal of Energy Storage"

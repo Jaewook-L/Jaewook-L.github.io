@@ -2,6 +2,7 @@
 title: "Robotic-XAI Collaboration for the Discovery of Scalable Electrolytes in Lithium Metal Batteries"
 collection: publications
 category: manuscripts
+authorship: co-first
 permalink: /publication/SDL-LMB
 date: 2026-01-11
 venue: "In Preparation"

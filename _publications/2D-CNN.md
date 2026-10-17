@@ -2,6 +2,7 @@
 title: "Simultaneous Extraction of Intra- and Inter-Cycle Features for Predicting Lithium-Ion Battery's Knees Using Convolutional and Recurrent Neural Networks"
 collection: publications
 category: manuscripts
+authorship: first
 permalink: /publication/2D-CNN
 date: 2024-02-15
 venue: "Applied Energy"
