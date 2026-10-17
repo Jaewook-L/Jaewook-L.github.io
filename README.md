@@ -53,8 +53,8 @@ larger screens, and above them on mobile. The same figure also appears on the
 paper's detail page. Figures preserve their contents without cropping; click
 a figure to open the original image in a new tab.
 
-Research keys map to the following topics. These figures appear after the
-description and before Related Publications:
+Research keys map to the following topics. These figures appear below the
+topic title and above its description, followed by Related Publications:
 
 | Key | Research topic |
 | --- | --- |

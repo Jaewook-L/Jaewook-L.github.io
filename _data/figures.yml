@@ -60,21 +60,21 @@ publications:
     alt: ""
     caption: ""
 
-# Research figures are placed after each topic's description.
+# Research figures are placed between each topic's title and description.
 research:
   hybrid-modeling:
-    image: ""
-    alt: ""
+    image: /images/research/hybrid-modeling.png
+    alt: "Electrochemical physics and cycling data feed physics-informed learning to predict capacity fade and resistance growth."
     caption: ""
   lifetime-diagnosis:
-    image: ""
-    alt: ""
+    image: /images/research/lifetime-diagnosis.png
+    alt: "Electric vehicle field data and direct current internal resistance support real-time diagnosis of battery capacity, power, lifetime, and degradation modes."
     caption: ""
   self-driving-lab:
-    image: ""
-    alt: ""
+    image: /images/research/self-driving-lab.png
+    alt: "A closed-loop battery discovery workflow connects electrolyte design, robotic preparation, testing, and Bayesian optimization."
     caption: ""
   transfer-learning:
-    image: ""
-    alt: ""
+    image: /images/research/transfer-learning.png
+    alt: "Transfer learning adapts knowledge from conventional lithium-ion batteries to silicon-anode lithium-ion and aqueous zinc-ion battery health prediction using limited target data."
     caption: ""
