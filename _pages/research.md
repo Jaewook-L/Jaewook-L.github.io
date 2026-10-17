@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-My research focuses on developing AI-driven frameworks for battery diagnostics and prognostics, combining physics-based electrochemical models with machine learning to enable reliable battery management under real-world charge/discharge conditions.
+My research combines physics-based electrochemical models with machine learning to build AI-driven frameworks for reliable battery diagnostics and prognostics under real-world operating conditions. I also use Bayesian optimization and self-driving labs to accelerate electrolyte design.
 
 ## Research Interests
 
@@ -14,14 +14,14 @@ My research focuses on developing AI-driven frameworks for battery diagnostics a
 {% assign research_figure = site.data.figures.research["hybrid-modeling"] %}
 {% include content-figure.html figure=research_figure title="Hybrid Physics-informed and Data-driven Modeling" variant="research" %}
 
-This research aims to overcome the limitations of conventional black-box models by integrating electrochemical first principles with deep learning architectures. By embedding physical constraints into neural networks, I develop frameworks that ensure thermodynamic consistency and improve generalization even with limited experimental data. My work particularly emphasizes capturing both intra-cycle voltage–current dynamics and inter-cycle long-term degradation trends to precisely monitor capacity fade and resistance growth.
+Conventional black-box models can produce physically inconsistent predictions and generalize poorly when experimental data are limited. I embed electrochemical principles into neural networks as physical constraints, which keeps predictions thermodynamically consistent and improves generalization from small datasets. These models capture intra-cycle voltage and current dynamics as well as inter-cycle degradation trends to track capacity fade and resistance growth.
 
 <div class="related-publications">
 <strong>Related Publications</strong>
 <ul>
   <li>Simultaneous Extraction of Intra- and Inter-Cycle Features for Predicting Lithium-Ion Battery's Knees Using Convolutional and Recurrent Neural Networks — <em>Applied Energy</em> (2024)</li>
   <li>Extracting Key Temporal and Cyclic Features from VIT Data to Predict Lithium-Ion Battery Knee Points Using Attention Mechanisms — <em>Computers & Chemical Engineering</em> (2025)</li>
-  <li>Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model for Data-Efficient Deployment — <em>Journal of Energy Storage (2026)</em></li>
+  <li>Physics-Informed Lithium-Ion Battery End-of-Life Prediction Model for Data-Efficient Deployment — <em>Journal of Energy Storage</em> (2026)</li>
   <li>Learning First-principles Knowledge from Data — <em>Artificial Intelligence in Manufacturing</em> (2024)</li>
 </ul>
 </div>
@@ -33,14 +33,14 @@ This research aims to overcome the limitations of conventional black-box models 
 {% assign research_figure = site.data.figures.research["lifetime-diagnosis"] %}
 {% include content-figure.html figure=research_figure title="Real-time Lifetime Diagnosis and Prognosis" variant="research" %}
 
-The goal of this research is to enable accurate and immediate battery health assessment in field environments without relying on costly laboratory equipment. I develop lightweight algorithms that utilize field-accessible electrochemical indices and operational data to diagnose degradation modes in real time. This includes quantifying surface degradation and identifying dominant failure mechanisms under dynamic electric vehicle (EV) profiles, ensuring the safety and reliability of large-scale energy storage systems.
+Safe operation of large-scale battery systems depends on health monitoring in the field, where costly laboratory tests are impractical. I develop lightweight algorithms that diagnose battery health in real time from operating data and field-accessible electrochemical indices such as direct current internal resistance. This includes quantifying surface degradation and identifying the dominant degradation modes under dynamic electric vehicle profiles.
 
 <div class="related-publications">
 <strong>Related Publications</strong>
 <ul>
   <li>Diagnosing Rapidly Degrading Lithium Ion Battery Cells Using Direct Current Internal Resistance — <em>Chemical Engineering Journal</em> (2025)</li>
   <li>Electric Vehicle Pattern-based Battery Cycling Dataset and Its Application in Predicting Rapid Degradation — <em>Journal of Energy Storage</em> (2025)</li>
-  <li>Interpretable Noninvasive Framework for Lithium-Ion Battery Degradation Diagnosis: Joint Prediction of Capacity and Power Fade and Mechanism-Aware Health Index Classification — <em>Applied Energy (2026)</em></li>
+  <li>Interpretable Noninvasive Framework for Lithium-Ion Battery Degradation Diagnosis: Joint Prediction of Capacity and Power Fade and Mechanism-Aware Health Index Classification — <em>Applied Energy</em> (2026)</li>
   <li>Deciphering Dominant Degradation Modes of Lithium-ion Batteries under Real-World Dynamic Profiles via Explainable Machine Learning — <em>In Preparation</em></li>
 </ul>
 </div>
@@ -52,15 +52,15 @@ The goal of this research is to enable accurate and immediate battery health ass
 {% assign research_figure = site.data.figures.research["self-driving-lab"] %}
 {% include content-figure.html figure=research_figure title="Bayesian Optimization and Self-Driving Lab for Accelerated Battery Design" variant="research" %}
 
-I leverage Bayesian optimization and inverse engineering to efficiently navigate the vast design space of electrolyte compositions and battery formation protocols. By integrating Gaussian process regression with automated experimental workflows — forming a self-driving laboratory platform — this research identifies optimal multi-solvent formulations and elucidates high-entropy effects that enhance rate capability and cycle life. This closed-loop, data-driven strategy minimizes trial-and-error, enabling the rapid and systematic discovery of high-performance battery components.
+The design space of electrolyte compositions and formation protocols is too large to explore by trial and error, which slows the discovery of high-performance battery materials. I search this space with Bayesian optimization and inverse design, coupling Gaussian process regression with automated experiments in a self-driving lab. With this closed-loop approach, I identify optimal multi-solvent formulations and explain how high-entropy effects improve rate capability and cycle life.
 
 <div class="related-publications">
 <strong>Related Publications</strong>
 <ul>
   <li>High-entropy Electrolytes towards Advanced Aqueous Zinc-ion Batteries — <em>Journal of Materials Chemistry A</em> (2025)</li>
+  <li>Extended Active Learning-Guided Design of Multi-Component Electrolytes with Opposing Co-Solvent Properties for Aqueous Zinc-Ion Batteries — <em>Journal of the American Chemical Society</em> (2026)</li>
   <li>Machine learning-driven design of multi-component electrolytes for fast-charging lithium-ion batteries — <em>In Preparation</em></li>
   <li>Robotic-XAI Collaboration for the Discovery of Scalable Electrolytes in Lithium Metal Batteries — <em>In Preparation</em></li>
-  <li>Extended Active Learning-Guided Design of Multi-Component Electrolytes with Opposing Co-Solvent Properties for Aqueous Zinc-Ion Batteries — <em>Journal of the American Chemical Society</em>, Accepted (<a href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15002453/v1" target="_blank" rel="noopener noreferrer">ChemRxiv</a>)</li>
 </ul>
 </div>
 
@@ -71,7 +71,7 @@ I leverage Bayesian optimization and inverse engineering to efficiently navigate
 {% assign research_figure = site.data.figures.research["transfer-learning"] %}
 {% include content-figure.html figure=research_figure title="Transfer Learning for Next-generation Batteries" variant="research" %}
 
-This research leverages knowledge gained from well-characterized lithium-ion systems to accelerate the development of next-generation batteries, including silicon-anode and aqueous zinc-ion systems. By employing transfer learning frameworks, I aim to predict degradation patterns across diverse chemistries with minimal new data, significantly reducing the time and cost required for material validation. This approach facilitates a universal diagnostic platform adaptable to various electrode materials and electrolyte environments.
+Next-generation batteries, such as silicon-anode lithium-ion and aqueous zinc-ion cells, lack the large cycling datasets available for conventional lithium-ion batteries. I use transfer learning to adapt models trained on these well-characterized systems to new chemistries and predict their degradation from limited data. This reduces the time and cost of material validation and is a step toward a diagnostic platform that works across electrode materials and electrolytes.
 
 <div class="related-publications">
 <strong>Related Publications</strong>
