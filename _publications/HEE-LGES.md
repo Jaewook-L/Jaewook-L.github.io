@@ -1,5 +1,5 @@
 ---
-title: "Machine learning-driven design of multi-component electrolytes for fast-charging lithium-ion batteries"
+title: "Machine Learning-Driven Design of Multi-Component Electrolytes for Fast-Charging Lithium-Ion Batteries"
 collection: publications
 category: manuscripts
 authorship: co-first
