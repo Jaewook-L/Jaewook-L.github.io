@@ -22,7 +22,6 @@ author_profile: true
 {% endfor %}
 {% endif %}
 
-<h2>In Preparation</h2>
 {% assign in_prep = "" | split: "" %}
 {% for item in site.publications %}
   {% if item.venue == "In Preparation" %}
@@ -30,9 +29,14 @@ author_profile: true
   {% endif %}
 {% endfor %}
 {% assign in_prep = in_prep | sort: "date" | reverse %}
+{% if in_prep.size > 0 %}
+<details class="publication-section">
+  <summary><h2>In Preparation</h2></summary>
 {% for post in in_prep %}
   {% include archive-single.html %}
 {% endfor %}
+</details>
+{% endif %}
 
 <h2>Published Journal Articles (First / Co-first Author)</h2>
 {% assign published = "" | split: "" %}
