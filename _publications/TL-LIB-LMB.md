@@ -1,5 +1,5 @@
 ---
-title: "A Transfer Learning Framework for Enabling Accurate State-of-Health Prediction across Diverse Battery Chemistries"
+title: "Data-Efficient Early Lifetime Prediction of Next-Generation Batteries by Transferring Shared Degradation"
 collection: publications
 category: manuscripts
 authorship: co-first
