@@ -2,6 +2,7 @@
 {% assign year_coauthored = "" | split: "" %}
 {% assign year_books = "" | split: "" %}
 {% assign year_other = "" | split: "" %}
+{% assign year_publication_number = include.start_number %}
 {% for item in include.publications %}
   {% if item.category == "manuscripts" %}
     {% if item.authorship == "first" or item.authorship == "co-first" %}
@@ -19,27 +20,31 @@
 {% if year_first.size > 0 %}
 <h3 class="publication-year__category">Journal Articles (First / Co-first Author)</h3>
 {% for post in year_first %}
-  {% include archive-single.html title_tag="h4" %}
+  {% include archive-single.html title_tag="h4" publication_number=year_publication_number %}
+  {% assign year_publication_number = year_publication_number | minus: 1 %}
 {% endfor %}
 {% endif %}
 
 {% if year_coauthored.size > 0 %}
 <h3 class="publication-year__category">Co-authored Journal Articles</h3>
 {% for post in year_coauthored %}
-  {% include archive-single.html title_tag="h4" %}
+  {% include archive-single.html title_tag="h4" publication_number=year_publication_number %}
+  {% assign year_publication_number = year_publication_number | minus: 1 %}
 {% endfor %}
 {% endif %}
 
 {% if year_books.size > 0 %}
 <h3 class="publication-year__category">Book Chapters</h3>
 {% for post in year_books %}
-  {% include archive-single.html title_tag="h4" %}
+  {% include archive-single.html title_tag="h4" publication_number=year_publication_number %}
+  {% assign year_publication_number = year_publication_number | minus: 1 %}
 {% endfor %}
 {% endif %}
 
 {% if year_other.size > 0 %}
 <h3 class="publication-year__category">Other Publications</h3>
 {% for post in year_other %}
-  {% include archive-single.html title_tag="h4" %}
+  {% include archive-single.html title_tag="h4" publication_number=year_publication_number %}
+  {% assign year_publication_number = year_publication_number | minus: 1 %}
 {% endfor %}
 {% endif %}

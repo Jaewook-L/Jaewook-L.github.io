@@ -20,7 +20,10 @@ See more info at https://academicpages.github.io/
 Publications are grouped automatically by the year in each record's `date`,
 newest first. Select a year to expand its articles and book chapters. Every
 year starts collapsed, and new years appear automatically when records are
-added. In Preparation and Under Review / In Revision remain separate status
+added. Year headings show only the year. Publication numbers run continuously
+from 1 at the bottom of the displayed list to the highest number at the top,
+including book chapters and work in preparation or review. In Preparation and
+Under Review / In Revision remain separate status
 sections rather than being presented as published work.
 
 Set `authorship` in each manuscript's front matter to `first`, `co-first`, or
