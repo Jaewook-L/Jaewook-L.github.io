@@ -1,0 +1,14 @@
+{% assign related_ids = site.data.research_publications[include.topic] %}
+{% if related_ids.size > 0 %}
+<div class="related-publications">
+  <strong>Related Publications</strong>
+  <ul>
+    {% for publication_id in related_ids %}
+      {% assign related_publication = site.publications | where: "slug", publication_id | first %}
+      {% if related_publication %}
+        <li><a href="{{ related_publication.url | relative_url }}">{{ related_publication.title | escape }}</a> — <em>{{ related_publication.venue | escape }}</em>{% unless related_publication.venue == "In Preparation" or related_publication.venue == "Under Review" or related_publication.venue == "In Revision" %} ({{ related_publication.date | date: "%Y" }}){% endunless %}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

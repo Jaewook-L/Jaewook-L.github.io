@@ -1,0 +1,19 @@
+# Publication IDs match filenames in _publications/ without .md.
+# Titles, venues and years are read directly from those records.
+hybrid-modeling:
+  - 2D-CNN
+  - Attention
+  - GPR
+  - Book1
+lifetime-diagnosis:
+  - DCIR-LGES
+  - 2D-CNN-LGES
+  - Power-Fade
+  - HMG-BMS
+self-driving-lab:
+  - HEE-Perspective
+  - Active-Learning-AZIB
+  - HEE-LGES
+  - SDL-LMB
+transfer-learning:
+  - TL-LIB-LMB

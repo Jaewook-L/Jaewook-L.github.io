@@ -17,6 +17,12 @@ See more info at https://academicpages.github.io/
 
 ## Publication status and authorship
 
+Publications are grouped automatically by the year in each record's `date`,
+newest first. Select a year to expand its articles and book chapters. Every
+year starts collapsed, and new years appear automatically when records are
+added. In Preparation and Under Review / In Revision remain separate status
+sections rather than being presented as published work.
+
 Set `authorship` in each manuscript's front matter to `first`, `co-first`, or
 `coauthor`, describing Jaewook Lee's role. First and co-first author journal
 articles appear in the main published section; other journal articles appear
@@ -26,7 +32,13 @@ section is sorted by the existing `date`, newest first.
 For an accepted article, set `venue` to the journal name, add `status: accepted`,
 and update `citation` to say Accepted. The detail page will show Accepted for
 publication rather than Published in. Retain a preprint link until the journal
-URL is available; update any related citation in `_pages/research.md` as well.
+URL is available.
+
+Research's Related Publications lists read titles, venues, and years directly
+from the same `_publications/` records. Add a publication's filename without
+`.md` to the appropriate topic in `_data/research_publications.yml` to include
+it in Research. Update titles in the publication record only; both pages then
+stay in sync. Keep the existing permalink when renaming a title.
 
 ## Publication and research figures
 

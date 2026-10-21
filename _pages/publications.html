@@ -9,62 +9,45 @@ author_profile: true
 {% endif %}
 
 {% assign under_review = "" | split: "" %}
+{% assign in_prep = "" | split: "" %}
+{% assign published = "" | split: "" %}
 {% for item in site.publications %}
   {% if item.venue == "Under Review" or item.venue == "In Revision" %}
     {% assign under_review = under_review | push: item %}
+  {% elsif item.venue == "In Preparation" %}
+    {% assign in_prep = in_prep | push: item %}
+  {% else %}
+    {% assign published = published | push: item %}
   {% endif %}
 {% endfor %}
 {% assign under_review = under_review | sort: "date" | reverse %}
 {% if under_review.size > 0 %}
 <h2>Under Review / In Revision</h2>
 {% for post in under_review %}
-  {% include archive-single.html %}
+  {% include archive-single.html title_tag="h3" %}
 {% endfor %}
 {% endif %}
 
-{% assign in_prep = "" | split: "" %}
-{% for item in site.publications %}
-  {% if item.venue == "In Preparation" %}
-    {% assign in_prep = in_prep | push: item %}
-  {% endif %}
-{% endfor %}
 {% assign in_prep = in_prep | sort: "date" | reverse %}
 {% if in_prep.size > 0 %}
 <details class="publication-section">
   <summary><h2>In Preparation</h2></summary>
 {% for post in in_prep %}
-  {% include archive-single.html %}
+  {% include archive-single.html title_tag="h3" %}
 {% endfor %}
 </details>
 {% endif %}
 
-<h2>Published Journal Articles (First / Co-first Author)</h2>
-{% assign published = "" | split: "" %}
-{% assign coauthored = "" | split: "" %}
-{% for item in site.publications %}
-  {% if item.category == "manuscripts" and item.venue != "Under Review" and item.venue != "In Revision" and item.venue != "In Preparation" %}
-    {% if item.authorship == "first" or item.authorship == "co-first" %}
-      {% assign published = published | push: item %}
-    {% else %}
-      {% assign coauthored = coauthored | push: item %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
 {% assign published = published | sort: "date" | reverse %}
-{% for post in published %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% assign coauthored = coauthored | sort: "date" | reverse %}
-{% if coauthored.size > 0 %}
-<h2>Co-authored Journal Articles</h2>
-{% for post in coauthored %}
-  {% include archive-single.html %}
+{% assign publication_years = published | group_by_exp: "publication", "publication.date | date: '%Y'" %}
+{% if publication_years.size > 0 %}
+<p class="publication-years__hint">Select a year to view its publications.</p>
+{% for publication_year in publication_years %}
+<details class="publication-section publication-year" id="publications-{{ publication_year.name }}">
+  <summary>
+    <h2>{{ publication_year.name }} <span class="publication-year__count">{{ publication_year.items.size }} {% if publication_year.items.size == 1 %}publication{% else %}publications{% endif %}</span></h2>
+  </summary>
+  {% include publication-year.html publications=publication_year.items %}
+</details>
 {% endfor %}
 {% endif %}
-
-<h2>Book Chapters</h2>
-{% assign books = site.publications | where: "category", "books" | sort: "date" | reverse %}
-{% for post in books %}
-  {% include archive-single.html %}
-{% endfor %}

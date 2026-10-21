@@ -28,6 +28,35 @@
   }
 }
 
+.publication-year {
+  > summary {
+    padding: 0.8em 0;
+  }
+
+  .publication-year__count {
+    margin-left: 0.65em;
+    font-size: 0.6em;
+    font-weight: normal;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+  .publication-year__category {
+    margin: 1.5em 0 1em;
+    font-size: 1em;
+    color: var(--global-text-color-light);
+  }
+
+  .archive__item-title {
+    font-size: 1.25em;
+  }
+}
+
+.publication-years__hint {
+  margin-top: 2em;
+  color: var(--global-text-color-light);
+}
+
 .archive {
   margin-bottom: 2em;
 
