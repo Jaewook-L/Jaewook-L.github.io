@@ -21,18 +21,20 @@ All published and accepted records are grouped automatically by the year in
 each record's `date`, newest first. Every year starts collapsed, and new years
 appear automatically when records are added. Year headings show only the year,
 with no publication counts or "Select a year" hint. Within each year, first
-and co-first author journal articles appear first, followed by Book Chapters
-and Other Publications when present, with Co-authored Journal Articles last.
-In Preparation and Under Review / In Revision remain separate status sections
-outside the published year groups.
+and co-first author journal articles appear first, followed by all remaining
+records together. Each year displays one list without First / Co-first,
+Co-authored, Book Chapters, or Other Publications headings. In Preparation
+and Under Review / In Revision remain separate status lists outside the
+published year groups.
 
 Set `authorship` in each manuscript's front matter to `first`, `co-first`, or
-`coauthor`, describing Jaewook Lee's role. Only first and co-first author
-journal articles are numbered, including their work in preparation or review.
-Numbers run continuously upward from 1 at the last first/co-first article in
-display order and update automatically when records are added. Co-authored
-articles, book chapters, and other publications have no numbers. Each category
-and status list is sorted by the existing `date`, newest first.
+`coauthor`, describing Jaewook Lee's role. Together with `category`, this is
+an internal ordering rule: first/co-first journal articles come before the
+remaining records. Each of these two groups is sorted by `date`, newest first;
+status lists are also sorted by `date`, newest first. All records are numbered,
+including work in preparation or review, co-authored articles, book chapters,
+and other publications. Numbers run continuously upward from 1 at the last
+item in display order and update automatically when records are added.
 
 For an accepted article, set `venue` to the journal name, add `status: accepted`,
 and update `citation` to say Accepted. The detail page will show Accepted for

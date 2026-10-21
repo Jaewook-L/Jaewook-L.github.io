@@ -33,11 +33,11 @@
 
 ## 콘텐츠 일관성
 
-- 논문 분류는 `category`, `authorship`, `venue`를 사용한다. `venue`의 `Under Review`, `In Revision`, `In Preparation`은 정확한 문자열로 분류된다. 일반 저널 논문은 `authorship: first` 또는 `co-first`이면 주저자 섹션에, 그 외는 공동저자 섹션에 표시된다.
+- 논문의 내부 정렬과 상태 분류에는 `category`, `authorship`, `venue`를 사용한다. `venue`의 `Under Review`, `In Revision`, `In Preparation`은 정확한 문자열로 분류된다. `category: manuscripts`이면서 `authorship: first` 또는 `co-first`인 저널 논문은 각 연도에서 먼저 배치하고, 나머지 항목은 그 아래에 배치한다. 저자 역할과 출판 유형에 따른 구분 제목은 화면에 표시하지 않는다.
 - Accepted 논문은 저널명을 `venue`에 넣고 `status: accepted`, citation, 링크를 함께 확인한다. 기존 상세 처리와 편집 예시는 `README.md`에 있다.
-- 사용자의 지속적인 선호(2026-10-21): Publications의 출판·accepted 항목 전체를 `date` 연도로 자동 분류하고 최신 연도부터 접기/펼치기로 표시하며 기본 상태는 닫힘이다. 각 연도 안에서는 First / Co-first 저널 논문, Book Chapters와 Other Publications(있으면), Co-authored Journal Articles 순서로 배치하여 공동저자 논문이 해당 연도 맨 아래에 오도록 한다. 준비 중·심사 중 항목은 연도 목록과 구분한 별도 상태 목록을 유지한다.
-- 연도 옆 `4 publications` 같은 개수와 `Select a year...` 안내는 표시하지 않는다. 번호는 First / Co-first 저널 논문에만 붙이며 준비 중·심사 중을 포함해 마지막 주저자 항목이 1번이 되도록 위쪽으로 연속 번호를 붙인다. 공동저자·북챕터·기타 항목은 번호 없이 표시한다. 논문 추가 시 연도와 주저자 번호를 자동 계산하며 템플릿에 직접 적지 않는다.
-- 각 논문 섹션은 `date` 내림차순이다. `_config.yml`의 `future: true` 때문에 미래 날짜도 노출되므로 날짜를 임의로 현재 날짜에 맞추지 않는다.
+- 사용자의 지속적인 선호(2026-10-21): Publications의 출판·accepted 항목 전체를 `date` 연도로 자동 분류하고 최신 연도부터 접기/펼치기로 표시하며 기본 상태는 닫힘이다. 각 연도 안에서는 First / Co-first 저널 논문을 먼저 배치하고 공동저자·북챕터·기타 항목을 그 아래에 함께 배치한다. First / Co-first, Co-authored, Book Chapters, Other Publications 구분 제목 없이 하나의 목록으로 표시한다. 준비 중·심사 중 항목은 연도 목록과 구분한 별도 상태 목록을 유지한다.
+- 연도 옆 `4 publications` 같은 개수와 `Select a year...` 안내는 표시하지 않는다. 준비 중·심사 중·공동저자·북챕터·기타 항목을 포함한 전체 목록에 번호를 붙이며 화면의 마지막 항목이 1번이 되도록 위쪽으로 연속 번호를 붙인다. 논문 추가 시 연도와 번호를 자동 계산하며 템플릿에 직접 적지 않는다.
+- 각 연도에서 먼저 배치하는 First / Co-first 그룹과 그 아래의 나머지 그룹은 각각 `date` 내림차순이며, 준비 중·심사 중 상태 목록도 `date` 내림차순이다. `_config.yml`의 `future: true` 때문에 미래 날짜도 노출되므로 날짜를 임의로 현재 날짜에 맞추지 않는다.
 - Research의 Related Publications는 `_data/research_publications.yml`의 논문 ID를 통해 `_publications/*.md`의 제목·저널·연도를 직접 읽는다. 제목은 논문 원본 파일 한 곳에서 수정한다. 출판된 제목에 실질적인 차이가 있으면 DOI/공식 출판사 정보로 확인하고, 미출판 논문은 사용자가 제공한 최신 제목을 따른다. 새 논문을 Research에 연결할 때 해당 연구 분야의 ID 목록에 파일명 stem을 추가한다.
 - 논문 상세의 기존 permalink는 주로 `/publication/...`이다. 컬렉션 기본 경로 `/publications/...`와 혼동하지 않는다.
 - `_data/figures.yml`의 논문 key는 해당 Markdown 파일명에서 `.md`를 뺀 값과 대소문자까지 일치해야 한다. `image: ""`는 그림을 숨긴다. 그림 교체 시 경로와 alt를 함께 확인하고 원본 내용을 자르지 않는다.

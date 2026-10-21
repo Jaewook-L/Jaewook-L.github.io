@@ -9,14 +9,10 @@ author_profile: true
 {% endif %}
 
 {% assign publications = site.publications | sort: "date" | reverse %}
-{% assign manuscripts = publications | where: "category", "manuscripts" %}
-{% assign first_author = manuscripts | where: "authorship", "first" %}
-{% assign cofirst_author = manuscripts | where: "authorship", "co-first" %}
-{% assign first_author = first_author | concat: cofirst_author %}
 {% assign under_review = "" | split: "" %}
 {% assign in_prep = "" | split: "" %}
 {% assign published = "" | split: "" %}
-{% assign next_publication_number = first_author.size %}
+{% assign next_publication_number = publications.size %}
 {% for item in publications %}
   {% if item.venue == "Under Review" or item.venue == "In Revision" %}
     {% assign under_review = under_review | push: item %}
@@ -29,12 +25,8 @@ author_profile: true
 {% if under_review.size > 0 %}
 <h2>Under Review / In Revision</h2>
 {% for post in under_review %}
-  {% if first_author contains post %}
-    {% include archive-single.html title_tag="h3" publication_number=next_publication_number %}
-    {% assign next_publication_number = next_publication_number | minus: 1 %}
-  {% else %}
-    {% include archive-single.html title_tag="h3" %}
-  {% endif %}
+  {% include archive-single.html title_tag="h3" publication_number=next_publication_number %}
+  {% assign next_publication_number = next_publication_number | minus: 1 %}
 {% endfor %}
 {% endif %}
 
@@ -42,12 +34,8 @@ author_profile: true
 <details class="publication-section">
   <summary><h2>In Preparation</h2></summary>
 {% for post in in_prep %}
-  {% if first_author contains post %}
-    {% include archive-single.html title_tag="h3" publication_number=next_publication_number %}
-    {% assign next_publication_number = next_publication_number | minus: 1 %}
-  {% else %}
-    {% include archive-single.html title_tag="h3" %}
-  {% endif %}
+  {% include archive-single.html title_tag="h3" publication_number=next_publication_number %}
+  {% assign next_publication_number = next_publication_number | minus: 1 %}
 {% endfor %}
 </details>
 {% endif %}
@@ -55,16 +43,12 @@ author_profile: true
 {% assign publication_years = published | group_by_exp: "publication", "publication.date | date: '%Y'" %}
 {% if publication_years.size > 0 %}
 {% for publication_year in publication_years %}
-{% assign year_manuscripts = publication_year.items | where: "category", "manuscripts" %}
-{% assign year_numbered = year_manuscripts | where: "authorship", "first" %}
-{% assign year_cofirst = year_manuscripts | where: "authorship", "co-first" %}
-{% assign year_numbered = year_numbered | concat: year_cofirst %}
 <details class="publication-section publication-year" id="publications-{{ publication_year.name }}">
   <summary>
     <h2>{{ publication_year.name }}</h2>
   </summary>
   {% include publication-year.html publications=publication_year.items start_number=next_publication_number %}
-  {% assign next_publication_number = next_publication_number | minus: year_numbered.size %}
+  {% assign next_publication_number = next_publication_number | minus: publication_year.items.size %}
 </details>
 {% endfor %}
 {% endif %}
