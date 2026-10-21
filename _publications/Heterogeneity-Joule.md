@@ -1,5 +1,5 @@
 ---
-title: "Rapid and Non-destructive Diagnosis of Lithium-ion Batteries via Quantification of Spatial Distribution of Surface Degradation"
+title: "Rapid and Non-destructive Diagnosis of Lithium-ion Batteries via Quantification of Anode Spatial Degradation"
 collection: publications
 category: manuscripts
 authorship: coauthor
