@@ -17,20 +17,21 @@ See more info at https://academicpages.github.io/
 
 ## Publication status and authorship
 
-Publications are grouped automatically by the year in each record's `date`,
-newest first. Select a year to expand its articles and book chapters. Every
-year starts collapsed, and new years appear automatically when records are
-added. Year headings show only the year. Publication numbers run continuously
-from 1 at the bottom of the displayed list to the highest number at the top,
-including book chapters and work in preparation or review. In Preparation and
-Under Review / In Revision remain separate status
-sections rather than being presented as published work.
+First and co-first author journal articles are grouped automatically by the
+year in each record's `date`, newest first. Every year starts collapsed, and
+new years appear automatically when records are added. Year headings show
+only the year. Only first and co-first author journal articles are numbered,
+continuously from 1 at the bottom of their section to the highest number at
+the top, including their work in preparation or review. In Preparation and
+Under Review / In Revision remain separate status sections rather than being
+presented as published work.
 
 Set `authorship` in each manuscript's front matter to `first`, `co-first`, or
 `coauthor`, describing Jaewook Lee's role. First and co-first author journal
 articles appear in the main published section; other journal articles appear
-under Co-authored Journal Articles, immediately before Book Chapters. Each
-section is sorted by the existing `date`, newest first.
+under Co-authored Journal Articles, immediately before Book Chapters. These
+separate lists have no numbering or year accordions. Each section is sorted
+by the existing `date`, newest first.
 
 For an accepted article, set `venue` to the journal name, add `status: accepted`,
 and update `citation` to say Accepted. The detail page will show Accepted for
