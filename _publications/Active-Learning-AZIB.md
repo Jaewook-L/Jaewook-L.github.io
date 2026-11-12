@@ -10,5 +10,5 @@ volume: 148
 issue: 44
 pages: "48689-48700"
 paperurl: "https://doi.org/10.1021/jacs.6c20703"
-citation: "Seung Hyun Jeong†, Jaewook Lee†, Jihwan Byun†, Minkwan Kim, Heejin Kim, and Jang Wook Choi, <i>Journal of the American Chemical Society</i> (2026) 148 (44): 48689–48700. DOI: 10.1021/jacs.6c20703."
+citation: "Seung Hyun Jeong†, Jaewook Lee†, Jihwan Byun†, Minkwan Kim, Heejin Kim, and Jang Wook Choi, <i>Journal of the American Chemical Society</i> (2026) 148 (44): 48689–48700."
 ---
