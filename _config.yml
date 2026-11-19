@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Jaewook Lee"
 title_separator          : "-"
 name                     : &name "Jaewook Lee"
-description              : &description "Postdoctoral Researcher at Seoul National University | Battery AI & Machine Learning"
+description              : &description "Researcher at Seoul National University | Battery AI & Machine Learning"
 url                      : "https://Jaewook-L.github.io"
 baseurl                  : ""
 repository               : "Jaewook-L/Jaewook-L.github.io"
@@ -23,7 +23,7 @@ author:
   avatar           : "JWL_picture.jpg"  # /images/ 폴더에 프로필 사진을 업로드하고 파일명을 맞춰주세요
   name             : "Jaewook Lee"
   pronouns         :
-  bio              : "Postdoctoral Researcher at Seoul National University. Working on AI-driven battery diagnostics, SOH prediction, and Bayesian optimization."
+  bio              : "Researcher at Seoul National University. Working on AI-driven battery diagnostics, SOH prediction, and Bayesian optimization."
   location         : "Seoul, South Korea"
   employer         : "Seoul National University"
   uri              :

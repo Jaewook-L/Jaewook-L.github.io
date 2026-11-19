@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Researcher in the Department of Chemical and Biological Engineering at **Seoul National University (SNU)**, working under the supervision of Prof. Jang Wook Choi. I received my Ph.D. from the **Korea Advanced Institute of Science & Technology (KAIST)** in 2025, advised by Prof. Seongmin Heo and Prof. Jay H. Lee (now at USC).
+I am a Researcher at the Battery Innovation Research Institute at **Seoul National University (SNU)**, working under the supervision of Prof. Jang Wook Choi. I received my Ph.D. from the **Korea Advanced Institute of Science & Technology (KAIST)** in 2025, advised by Prof. Seongmin Heo and Prof. Jay H. Lee (now at USC).
 
 My research focuses on developing AI-driven frameworks for battery diagnostics and prognostics, combining physics-based models with machine learning to enable reliable, real-world battery management.
 
@@ -20,8 +20,12 @@ My research focuses on developing AI-driven frameworks for battery diagnostics a
 
 ## Research Experience
 
-Postdoctoral Researcher, Chemical and Biological Engineering and Institute of Chemical Processes  
-Seoul National University, Seoul (Mar 2025 – present)  
+Researcher (Mar 2026 – Present)  
+Battery Innovation Research Institute, Seoul National University, Seoul, Korea  
+Advisor: Prof. Jang Wook Choi
+
+Postdoctoral Fellow (Mar 2025 – Feb 2026)  
+Engineering Research Institute, Seoul National University, Seoul, Korea  
 Advisor: Prof. Jang Wook Choi
 
 ## Education
